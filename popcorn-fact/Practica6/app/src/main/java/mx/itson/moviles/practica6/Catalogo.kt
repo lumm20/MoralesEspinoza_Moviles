@@ -1,4 +1,4 @@
-package mx.itson.moviles.practica6
+ package mx.itson.moviles.practica6
 
 import android.content.Context
 import android.content.Intent
