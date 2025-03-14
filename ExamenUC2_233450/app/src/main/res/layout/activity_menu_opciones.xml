@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuOpciones"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/grupo2" />
+
+    <GridView
+        android:id="@+id/menu_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:layout_marginTop="18dp"
+        android:background="@color/red"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        />
+
+</LinearLayout>
