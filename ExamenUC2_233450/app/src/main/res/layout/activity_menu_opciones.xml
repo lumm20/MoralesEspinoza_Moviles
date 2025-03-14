@@ -14,16 +14,52 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/grupo2" />
 
-    <GridView
-        android:id="@+id/menu_opciones"
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="2"
-        android:layout_marginTop="18dp"
-        android:background="@color/red"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="8dp"
-        android:horizontalSpacing="8dp"
-        />
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/boton_detalles"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/grid_item"
+            android:text="@string/detalles"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/boton_globos"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/grid_item"
+            android:text="@string/globos"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/boton_peluches"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/grid_item"
+            android:text="@string/peluches"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/boton_regalos"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/grid_item"
+            android:text="@string/regalos"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/boton_tazas"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/grid_item"
+            android:text="@string/tazas"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </GridLayout>
+
 
 </LinearLayout>

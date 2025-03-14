@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:background="@color/red">
 
+    <ImageView
+        android:id="@+id/producto_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cumpleescolar"/>
     <TextView
-        android:id="@+id/titulo_opcion"
-        android:layout_width="match_parent"
+        android:id="@+id/producto_precio"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:fontFamily="sans-serif-light"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/detalles"
-        android:textColorLink="@color/white"
-        android:textSize="20sp"
-        android:padding="8dp"/>
+        android:textColor="@color/white"
+        android:text="$5.00"
+        android:textSize="40sp"/>
 
 </LinearLayout>

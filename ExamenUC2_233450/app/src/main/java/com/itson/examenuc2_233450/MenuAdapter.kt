@@ -8,15 +8,15 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class MenuAdapter(private val context: Context, private val opciones: Array<String>): BaseAdapter() {
+class MenuAdapter(private val context: Context, private val productos: ArrayList<Producto>): BaseAdapter() {
 
 
     override fun getCount(): Int {
-        return opciones.size
+        return productos.size
     }
 
     override fun getItem(position: Int): Any {
-        return opciones[position]
+        return productos[position]
     }
 
     override fun getItemId(position: Int): Long {
@@ -26,10 +26,11 @@ class MenuAdapter(private val context: Context, private val opciones: Array<Stri
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val vista = convertView ?: LayoutInflater.from(context).inflate(R.layout.opcion, parent, false)
         val textView:TextView = vista.findViewById(R.id.titulo_opcion)
-        textView.text = opciones[position]
+        textView.text = productos[position].precio.toString()
 
         textView.setOnClickListener (){
-            val intento = Intent(context, detalle_pelicula::class.java)
+            val intento = Intent(context, DetalleOpcion::class.java)
+
         }
         return textView
     }
