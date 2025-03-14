@@ -22,7 +22,7 @@
         android:fontFamily="sans-serif-medium"/>
 
     <ListView
-        android:id="@+id/listaPeluches"
+        android:id="@+id/lista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

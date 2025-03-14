@@ -23,22 +23,27 @@ class MenuOpciones : AppCompatActivity() {
 
         btnDetalles.setOnClickListener{
             var intent: Intent = Intent(this, DetalleOpcion::class.java)
+            intent.putExtra("opcion","detalles")
             startActivity(intent)
         }
         btnGlobos.setOnClickListener{
             var intent: Intent = Intent(this, DetalleOpcion::class.java)
+            intent.putExtra("opcion","globos")
             startActivity(intent)
         }
         btnPeluches.setOnClickListener{
             var intent: Intent = Intent(this, DetalleOpcion::class.java)
+            intent.putExtra("opcion","peluches")
             startActivity(intent)
         }
         btnRegalos.setOnClickListener{
             var intent: Intent = Intent(this, DetalleOpcion::class.java)
+            intent.putExtra("opcion","regalos")
             startActivity(intent)
         }
         btnTazas.setOnClickListener{
             var intent: Intent = Intent(this, DetalleOpcion::class.java)
+            intent.putExtra("opcion","tazas")
             startActivity(intent)
         }
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
 
 class MenuAdapter(private val context: Context, private val productos: ArrayList<Producto>): BaseAdapter() {
@@ -25,13 +26,12 @@ class MenuAdapter(private val context: Context, private val productos: ArrayList
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val vista = convertView ?: LayoutInflater.from(context).inflate(R.layout.opcion, parent, false)
-        val textView:TextView = vista.findViewById(R.id.titulo_opcion)
-        textView.text = productos[position].precio.toString()
+        var producto=productos[position]
+        val precio:TextView = vista.findViewById(R.id.producto_precio)
+        val img:ImageView = vista.findViewById(R.id.producto_img)
+        img.setImageResource(producto.imagen)
+        precio.setText("$${producto.precio}")
 
-        textView.setOnClickListener (){
-            val intento = Intent(context, DetalleOpcion::class.java)
-
-        }
-        return textView
+        return vista
     }
 }
