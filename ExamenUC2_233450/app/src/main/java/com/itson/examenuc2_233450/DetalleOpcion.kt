@@ -2,6 +2,7 @@ package com.itson.examenuc2_233450
 
 import android.os.Bundle
 import android.widget.ListView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,14 +16,30 @@ class DetalleOpcion : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_detalle_opcion)
 
+        var categoria:TextView=findViewById(R.id.tv_categoria)
         val bundle=intent.extras
         if(bundle!= null){
             when(bundle.getString("opcion")){
-                "detalles"->{agregarDetalles()}
-                "globos"->{agregarGlobos()}
-                "peluches"->{agregarPeluches()}
-                "regalos"->{agregarRegalos()}
-                "tazas"->{agregarTazas()}
+                "detalles"->{
+                    agregarDetalles()
+                    categoria.setText("Detalles")
+                }
+                "globos"->{
+                    agregarGlobos()
+                    categoria.setText("Globos")
+                }
+                "peluches"->{
+                    agregarPeluches()
+                    categoria.setText("Peluches")
+                }
+                "regalos"->{
+                    agregarRegalos()
+                    categoria.setText("Regalos")
+                }
+                "tazas"->{
+                    agregarTazas()
+                    categoria.setText("Tazas")
+                }
             }
         }
         var listView: ListView =findViewById(R.id.lista)

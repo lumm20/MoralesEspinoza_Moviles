@@ -9,7 +9,8 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class MenuAdapter(private val context: Context, private val productos: ArrayList<Producto>): BaseAdapter() {
+class MenuAdapter(private val context: Context,
+                  private val productos: ArrayList<Producto>): BaseAdapter() {
 
 
     override fun getCount(): Int {

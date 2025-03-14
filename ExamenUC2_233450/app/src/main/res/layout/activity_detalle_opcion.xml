@@ -10,11 +10,10 @@
     android:background="@color/red">
 
     <TextView
-        android:id="@+id/tv_nombre_pelicula"
+        android:id="@+id/tv_categoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/peluches"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="40sp"
