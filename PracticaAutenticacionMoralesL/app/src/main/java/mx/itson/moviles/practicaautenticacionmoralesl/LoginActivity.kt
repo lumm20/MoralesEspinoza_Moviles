@@ -28,9 +28,15 @@ class LoginActivity : AppCompatActivity() {
         val password: EditText =findViewById(R.id.etPassword)
         val errorTv: TextView =findViewById(R.id.tvError)
         val button: Button =findViewById(R.id.btnRegister)
+        val buttonLogin: Button =findViewById(R.id.btnLogin)
 
         errorTv.visibility = View.INVISIBLE
+
         button.setOnClickListener({
+            val intent=Intent(this,SignInActivity::class.java)
+            startActivity(intent)
+        })
+        buttonLogin.setOnClickListener({
             login(email.text.toString(),password.text.toString())
         })
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

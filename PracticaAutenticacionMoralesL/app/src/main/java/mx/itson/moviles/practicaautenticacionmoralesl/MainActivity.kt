@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         val user: TextView =findViewById(R.id.tvUser)
         val button: Button =findViewById(R.id.btnLogout)
 
+        val txt = "User: ".plus(email)
+        user.text = txt
         button.setOnClickListener({
             Firebase.auth.signOut()
             val intent=Intent(this,LoginActivity::class.java)
