@@ -68,7 +68,7 @@ class SignInActivity : AppCompatActivity() {
                         Toast.makeText(
                             baseContext,
                             "El registro fallo",
-                            Toast.LENGTH_SHORT,
+                            Toast.LENGTH_SHORT
                         ).show()
                     }
                 }
