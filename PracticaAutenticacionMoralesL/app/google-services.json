@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250890790542",
+    "project_id": "ejemplologin-54aaa",
+    "storage_bucket": "ejemplologin-54aaa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250890790542:android:a05d7ab3614458b03e8bdf",
+        "android_client_info": {
+          "package_name": "mx.itson.moviles.practicaautenticacionmoralesl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUHEGfTAnXCYxaNDzIsgBc_iqWUaVijvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
