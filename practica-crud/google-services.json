@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "359504342259",
+    "project_id": "practica-crud-203ef",
+    "storage_bucket": "practica-crud-203ef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359504342259:android:91dbde23585ae60102db86",
+        "android_client_info": {
+          "package_name": "mx.edu.itson"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2r5LH4wSGjk48i-9jHUG1n-6fTU59FGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
